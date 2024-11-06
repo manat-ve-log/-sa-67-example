@@ -53,7 +53,6 @@ type (
 
        GenderID  uint      `json:"gender_id"`
 
-       PhoneNumber string  `json:"phone_number"`
    }
 
 )
@@ -128,8 +127,6 @@ func SignUp(c *gin.Context) {
        BirthDay:  payload.BirthDay,
 
        GenderID:  payload.GenderID,
-
-       PhoneNumber: payload.PhoneNumber,
 
    }
 

@@ -47,15 +47,21 @@ func SetupDatabase() {
 
 
    db.AutoMigrate(
+
        &entity.Users{},
+
        &entity.Genders{},
+
    )
 
+
    GenderMale := entity.Genders{Gender: "Male"}
+
    GenderFemale := entity.Genders{Gender: "Female"}
 
 
    db.FirstOrCreate(&GenderMale, &entity.Genders{Gender: "Male"})
+
    db.FirstOrCreate(&GenderFemale, &entity.Genders{Gender: "Female"})
 
 
@@ -78,8 +84,6 @@ func SetupDatabase() {
        BirthDay:  BirthDay,
 
        GenderID:  1,
-
-       PhoneNumber: "0979989859",
 
    }
 

@@ -29,5 +29,4 @@ type Users struct {
 
    Gender    *Genders  `gorm:"foreignKey: gender_id" json:"gender"`
 
-   PhoneNumber string  `json:"phone_number"`
 }

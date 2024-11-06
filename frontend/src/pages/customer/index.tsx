@@ -134,16 +134,6 @@ function Customers() {
 
     {
 
-      title: "เบอร์โทร",
-
-      dataIndex: "phone_number",
-
-      key: "phone_number",
-
-    },
-
-    {
-
       title: "",
 
       render: (record) => (
